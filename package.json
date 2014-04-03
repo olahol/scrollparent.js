@@ -1,0 +1,20 @@
+{
+  "name": "scrollparent.js"
+  , "private": true
+  , "version": "0.0.1"
+  , "main": "./scrollparent.js"
+  , "testling": {
+    "html": "test.html"
+    , "browsers": [
+      "ie/9..latest",
+      "chrome/22..latest",
+      "firefox/16..latest",
+      "safari/latest",
+      "opera/11.0..latest",
+      "iphone/6",
+      "ipad/6"
+    ]
+  }, "scripts": {
+    "test": "testling . -x 'firefox-trunk'"
+  }
+}
