@@ -1,20 +1,22 @@
 {
-  "name": "scrollparent.js"
-  , "private": true
-  , "version": "0.0.1"
-  , "main": "./scrollparent.js"
-  , "testling": {
-    "html": "test.html"
-    , "browsers": [
-      "ie/9..latest",
-      "chrome/22..latest",
-      "firefox/16..latest",
-      "safari/latest",
-      "opera/11.0..latest",
-      "iphone/6",
-      "ipad/6"
-    ]
-  }, "scripts": {
-    "test": "testling . -x 'firefox-trunk'"
-  }
+  "name": "scrollparent",
+  "version": "0.1.0",
+  "description": "A function to get the scrolling parent of an html element.",
+  "main": "scrollparent.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/olahol/scrollparent.js.git"
+  },
+  "keywords": [
+    "browser",
+    "scroll",
+    "scrollparent",
+    "dom"
+  ],
+  "author": "Ola Holmström",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/olahol/scrollparent.js/issues"
+  },
+  "homepage": "https://github.com/olahol/scrollparent.js#readme"
 }
