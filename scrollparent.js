@@ -1,4 +1,14 @@
-;(function () {
+(function (root, factory) {
+  if (typeof define === "function" && define.amd) {
+    define([], factory);
+  } else if (typeof module === "object" && module.exports) {
+    module.exports = factory();
+  } else {
+    root.Scrollparent = factory();
+  }
+}(this, function () {
+  var regex = /(auto|scroll)/;
+
   var parents = function (node, ps) {
     if (node.parentNode === null) { return ps; }
 
@@ -14,7 +24,7 @@
   };
 
   var scroll = function (node) {
-   return (/(auto|scroll)/).test(overflow(node));
+   return regex.test(overflow(node));
   };
 
   var scrollParent = function (node) {
@@ -33,10 +43,5 @@
     return document.body;
   };
 
-  // If common js is defined use it.
-  if (typeof module === "object" && module !== null) {
-    module.exports = scrollParent;
-  } else {
-    window.Scrollparent = scrollParent;
-  }
-})();
+  return scrollParent;
+}));
