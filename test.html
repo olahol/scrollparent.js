@@ -127,8 +127,8 @@ console.log("1..5");
 
 equal(Scrollparent(document.getElementById("test1")).className, "scroll");
 
-equal(Scrollparent(document.getElementById("test2")), window);
-equal(Scrollparent(document.getElementById("test3")), window);
+equal(Scrollparent(document.getElementById("test2")), document.body);
+equal(Scrollparent(document.getElementById("test3")), document.body);
 
 equal(Scrollparent(document.getElementById("test4")).className, "scroll-y");
 equal(Scrollparent(document.getElementById("test5")).className, "scroll-x");
