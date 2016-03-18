@@ -14,7 +14,7 @@ npm install scrollparent --save
 ## Example
 
 ```js
-Scrollparent(document.getElementById("content")) // window
+Scrollparent(document.getElementById("content")) // document.body
 ```
 
 ```js

@@ -30,7 +30,7 @@
       }
     }
 
-    return window;
+    return document.body;
   };
 
   // If common js is defined use it.
