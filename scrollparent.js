@@ -28,7 +28,7 @@
   };
 
   var scrollParent = function (node) {
-    if (!(node instanceof HTMLElement)) {
+    if (!(node instanceof HTMLElement || node instanceof SVGElement)) {
       return ;
     }
 
