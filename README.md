@@ -26,6 +26,7 @@ Scrollparent(document.getElementById("inside-a-scrolling-div")) // HTMLDivElemen
 
 * Ola Holmström (@olahol)
 * Bart Nagel (@tremby)
+* Daniel White (@danbrianwhite)
 
 ## License
 

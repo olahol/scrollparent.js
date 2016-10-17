@@ -4,7 +4,7 @@
     "scrollparent.js"
   ],
   "dependencies": {},
-  "version": "1.0.1",
+  "version": "1.0.2",
   "homepage": "https://github.com/olahol/scrollparent.js",
   "description": "A function to get the scrolling parent of an html element.",
   "keywords": [
