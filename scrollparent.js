@@ -40,7 +40,7 @@
       }
     }
 
-    return document.body;
+    return document.scrollingElement || document.documentElement;
   };
 
   return scrollParent;

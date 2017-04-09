@@ -13,7 +13,7 @@ npm install scrollparent --save
 ```js
 var Scrollparent = require("scrollparent");
 
-Scrollparent(document.getElementById("content")) // document.body
+Scrollparent(document.getElementById("content")) // HTMLHtmlElement or HTMLBodyElement as appropriate
 ```
 
 ```js
@@ -21,6 +21,20 @@ var Scrollparent = require("scrollparent");
 
 Scrollparent(document.getElementById("inside-a-scrolling-div")) // HTMLDivElement
 ```
+
+## Note about the root scrolling element
+
+Internally, the root scrolling element is determined in this library
+as the result of
+
+```js
+document.scrollingElement || document.htmlElement
+```
+
+This should give a usable result in most browsers today
+but if you want to ensure full support
+you should use a `document.scrollingElement` polyfill such as
+[this one](https://github.com/mathiasbynens/document.scrollingElement).
 
 ## Contributors
 
