@@ -28,7 +28,7 @@ Internally, the root scrolling element is determined in this library
 as the result of
 
 ```js
-document.scrollingElement || document.htmlElement
+document.scrollingElement || document.documentElement;
 ```
 
 This should give a usable result in most browsers today

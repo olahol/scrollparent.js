@@ -1,6 +1,6 @@
 {
   "name": "scrollparent",
-  "version": "2.0.0",
+  "version": "2.0.1",
   "description": "A function to get the scrolling parent of an html element.",
   "main": "scrollparent.js",
   "repository": {
