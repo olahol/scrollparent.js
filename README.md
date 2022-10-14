@@ -1,10 +1,11 @@
 # scrollparent.js
 
+![Build status][build-image]
 [![NPM version][npm-image]][npm-url]
 [![Size][size-image]][size-url]
 [![Download count][downloads-image]][downloads-url]
 
-> A function to get the scrolling parent of an html element.
+A function to get the scrolling parent of a html element.
 
 ## Install
 
@@ -42,17 +43,18 @@ you should use a `document.scrollingElement` polyfill such as
 
 ## Contributors
 
-* Ola Holmström (@olahol)
-* Bart Nagel (@tremby)
-* Daniel White (@danbrianwhite)
+<a href="https://github.com/olahol/scrollparent.js/graphs/contributors">
+  <img src="https://contrib.rocks/image?repo=olahol/scrollparent.js" />
+</a>
 
 ## License
 
 MIT
 
-[npm-image]: https://img.shields.io/npm/v/scrollparent.svg?style=flat-square
+[build-image]: https://github.com/olahol/scrollparent.js/actions/workflows/playwright.yml/badge.svg
+[npm-image]: https://img.shields.io/npm/v/scrollparent.svg
 [npm-url]: https://npmjs.org/package/scrollparent
-[downloads-image]: http://img.shields.io/npm/dm/scrollparent.svg?style=flat-square
+[downloads-image]: http://img.shields.io/npm/dm/scrollparent.svg
 [downloads-url]: https://npmjs.org/package/scrollparent
-[size-image]: https://badge-size.herokuapp.com/olahol/scrollparent.js/master/scrollparent.js?style=flat-square
-[size-url]: https://github.com/olahol/scrollparent.js/blob/master/react-tagsinput.js
+[size-image]: https://badge-size.herokuapp.com/olahol/scrollparent.js/master/scrollparent.js
+[size-url]: https://github.com/olahol/scrollparent.js/blob/master/scrollparent.js
