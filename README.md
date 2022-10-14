@@ -1,5 +1,9 @@
 # scrollparent.js
 
+[![NPM version][npm-image]][npm-url]
+[![Size][size-image]][size-url]
+[![Download count][downloads-image]][downloads-url]
+
 > A function to get the scrolling parent of an html element.
 
 ## Install
@@ -45,3 +49,10 @@ you should use a `document.scrollingElement` polyfill such as
 ## License
 
 MIT
+
+[npm-image]: https://img.shields.io/npm/v/scrollparent.svg?style=flat-square
+[npm-url]: https://npmjs.org/package/scrollparent
+[downloads-image]: http://img.shields.io/npm/dm/scrollparent.js.svg?style=flat-square
+[downloads-url]: https://npmjs.org/package/scrollparent.js
+[size-image]: https://badge-size.herokuapp.com/olahol/scrollparent.js/master/scrollparent.js?style=flat-square
+[size-url]: https://github.com/olahol/scrollparent.js/blob/master/react-tagsinput.js

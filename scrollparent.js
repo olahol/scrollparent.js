@@ -24,7 +24,7 @@
   };
 
   var scroll = function (node) {
-   return regex.test(overflow(node));
+    return regex.test(overflow(node));
   };
 
   var scrollParent = function (node) {

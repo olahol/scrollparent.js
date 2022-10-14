@@ -18,5 +18,12 @@
   "bugs": {
     "url": "https://github.com/olahol/scrollparent.js/issues"
   },
-  "homepage": "https://github.com/olahol/scrollparent.js#readme"
+  "homepage": "https://github.com/olahol/scrollparent.js#readme",
+  "devDependencies": {
+    "@playwright/test": "^1.27.1"
+  },
+  "scripts": {
+    "test": "playwright test"
+  },
+  "files": []
 }

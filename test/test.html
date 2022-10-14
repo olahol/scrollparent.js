@@ -2,7 +2,7 @@
 <html>
 
 <head>
-  <title></title>
+  <title>scrollparent.js test page</title>
   <meta charset="utf-8">
   <style>
     .scroll {
@@ -114,24 +114,6 @@
   </div>
 </div>
 
-<script src="scrollparent.js"></script>
-<script>
-var equal = function (a, b) {
-  console.log((a === b ? "ok" : "not ok") + " " + (++ assertion));
-}
-
-var assertion = 0;
-
-console.log("TAP version 13");
-console.log("1..5");
-
-equal(Scrollparent(document.getElementById("test1")).className, "scroll");
-
-equal(Scrollparent(document.getElementById("test2")), document.scrollingElement || document.documentElement);
-equal(Scrollparent(document.getElementById("test3")), document.scrollingElement || document.documentElement);
-
-equal(Scrollparent(document.getElementById("test4")).className, "scroll-y");
-equal(Scrollparent(document.getElementById("test5")).className, "scroll-x");
-</script>
+<script src="../scrollparent.js"></script>
 </body>
 </html>
