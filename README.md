@@ -52,7 +52,7 @@ MIT
 
 [npm-image]: https://img.shields.io/npm/v/scrollparent.svg?style=flat-square
 [npm-url]: https://npmjs.org/package/scrollparent
-[downloads-image]: http://img.shields.io/npm/dm/scrollparent.js.svg?style=flat-square
-[downloads-url]: https://npmjs.org/package/scrollparent.js
+[downloads-image]: http://img.shields.io/npm/dm/scrollparent.svg?style=flat-square
+[downloads-url]: https://npmjs.org/package/scrollparent
 [size-image]: https://badge-size.herokuapp.com/olahol/scrollparent.js/master/scrollparent.js?style=flat-square
 [size-url]: https://github.com/olahol/scrollparent.js/blob/master/react-tagsinput.js
