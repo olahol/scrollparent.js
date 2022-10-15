@@ -1,9 +1,9 @@
-# scrollparent.js
+# scrollparent
 
-![Build status][build-image]
 [![NPM version][npm-image]][npm-url]
 [![Size][size-image]][size-url]
 [![Download count][downloads-image]][downloads-url]
+![Build status][build-image]
 
 A function to get the scrolling parent of a html element.
 
