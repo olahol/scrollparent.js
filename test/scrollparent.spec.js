@@ -4,8 +4,6 @@ const { test, expect } = require('@playwright/test');
 test('test scrollparent behaviour', async ({ page }) => {
   const testFile = resolve(__dirname, 'test.html');
 
-  page.on('console', msg => console.log(msg.text()));
-
   await page.goto(`file://${testFile}`);
 
   await expect(page).toHaveTitle('scrollparent.js test page');
