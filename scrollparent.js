@@ -15,12 +15,13 @@
     return parents(node.parentNode, ps.concat([node]));
   };
 
-  var style = function (node, prop) {
-    return getComputedStyle(node, null).getPropertyValue(prop);
+  var style = function (css, prop) {
+    return css.getPropertyValue(prop);
   };
 
   var overflow = function (node) {
-    return style(node, "overflow") + style(node, "overflow-y") + style(node, "overflow-x");
+    const css = getComputedStyle(node, null);
+    return style(css, "overflow") + style(css, "overflow-y") + style(css, "overflow-x");
   };
 
   var scroll = function (node) {
