@@ -20,7 +20,7 @@
   };
 
   var overflow = function (node) {
-    const css = getComputedStyle(node, null);
+    var css = getComputedStyle(node, null);
     return style(css, "overflow") + style(css, "overflow-y") + style(css, "overflow-x");
   };
 

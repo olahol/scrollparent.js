@@ -17,5 +17,7 @@ jobs:
       run: npm ci
     - name: Install Playwright Browsers
       run: npx playwright install --with-deps
+    - name: Run ES5 validator
+      run: npm run lint
     - name: Run Playwright tests
       run: npm test
