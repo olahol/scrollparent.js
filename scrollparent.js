@@ -7,42 +7,28 @@
     root.Scrollparent = factory();
   }
 }(this, function () {
-  var regex = /(auto|scroll)/;
+  function isScrolling(node) {
+    var overflow = getComputedStyle(node, null).getPropertyValue("overflow");
 
-  var parents = function (node, ps) {
-    if (node.parentNode === null) { return ps; }
+    return overflow.indexOf("scroll") > -1 || overflow.indexOf("auto") > - 1;
+  }
 
-    return parents(node.parentNode, ps.concat([node]));
-  };
-
-  var style = function (css, prop) {
-    return css.getPropertyValue(prop);
-  };
-
-  var overflow = function (node) {
-    var css = getComputedStyle(node, null);
-    return style(css, "overflow") + style(css, "overflow-y") + style(css, "overflow-x");
-  };
-
-  var scroll = function (node) {
-    return regex.test(overflow(node));
-  };
-
-  var scrollParent = function (node) {
+  function scrollParent(node) {
     if (!(node instanceof HTMLElement || node instanceof SVGElement)) {
-      return ;
+      return undefined;
     }
 
-    var ps = parents(node.parentNode, []);
-
-    for (var i = 0; i < ps.length; i += 1) {
-      if (scroll(ps[i])) {
-        return ps[i];
+    var current = node.parentNode;
+    while (current.parentNode) {
+      if (isScrolling(current)) {
+        return current;
       }
+
+      current = current.parentNode;
     }
 
     return document.scrollingElement || document.documentElement;
-  };
+  }
 
   return scrollParent;
 }));
