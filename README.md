@@ -56,5 +56,5 @@ MIT
 [npm-url]: https://npmjs.org/package/scrollparent
 [downloads-image]: http://img.shields.io/npm/dm/scrollparent.svg
 [downloads-url]: https://npmjs.org/package/scrollparent
-[size-image]: https://badge-size.herokuapp.com/olahol/scrollparent.js/master/scrollparent.js
+[size-image]: https://img.badgesize.io/olahol/scrollparent.js/master/scrollparent.js.svg
 [size-url]: https://github.com/olahol/scrollparent.js/blob/master/scrollparent.js
